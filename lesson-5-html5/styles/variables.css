@@ -1,0 +1,10 @@
+:root {
+    --c-black: #333;
+    --c-white: #e3e3e3;
+    --c-primary: chocolate;
+    --c-warning: #1f8a70;
+    --c-PeachPuff: #FFDAB9;
+    /* fonts */
+    --f-base: 14px;
+}
+

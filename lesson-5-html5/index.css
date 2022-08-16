@@ -1,0 +1,35 @@
+.header-wrapper {
+  display: inline-block;
+  padding: 20px;
+}
+
+/* * Logo */
+.logo {
+  background-color: rgba(14, 233, 233, 0.1);
+  display: inline-block;
+  font-size: 20px;
+}
+.logo:hover {
+background-color: #8a2be2;
+color: #f0f8ff;
+border:1px solid black;
+}
+
+/* navigation */
+.navigation {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+/* *Navigation */
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+.navigation-item:last-child {
+  margin-right: 0;
+}
