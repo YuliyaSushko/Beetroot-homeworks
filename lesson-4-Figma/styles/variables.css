@@ -1,0 +1,12 @@
+:root {
+    /* colors */
+    --c-black: #070707;
+    --c-white: #e3e3e3;
+    --c-chocolate: #D2691E;
+    --c-gray: #828282;
+    --c-royalblue: #4169E1;
+    --c-peachpuff: #FFDAB9;
+    --c-whitesmoke:#E5E5E5;
+    /* fonts */
+    --f-base: 14px;
+}

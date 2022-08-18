@@ -1,0 +1,137 @@
+.app {
+  /* text-align: center; */
+  margin: 0 auto;
+}
+/* main page */
+.main-page {
+  height: 40px;
+  width: 100%;
+}
+/* main page block */
+.main-page-wrapper {
+  padding: 10px 0 10px 0;
+  background-color: rgba(141, 230, 236, 0.7);
+}
+/* main-page-link */
+.main-page-link {
+  height: 25px;
+
+  font-size: 16px;
+  color: var(--c-gray);
+}
+/* * Header */
+.header {
+  margin: 0 auto;
+  height: 80px;
+}
+/* container */
+.container {
+  border-bottom: 1px solid blue;
+  text-align: center;
+  margin: 0 auto;
+  height: 80px;
+  width: 970px;
+}
+/* block in container */
+.container-wrapper {
+  max-width: 100%;
+  height: 80px;
+}
+/* navigation */
+.container-navigation {
+  padding: 28px 0 28px 0;
+}
+/* li navigation */
+.container-list li {
+  display: inline-block;
+  margin-right: 40px;
+  padding: 28 0 28 0;
+}
+/* delete last margin in li */
+.container-list li:last-child {
+  margin-right: 0;
+}
+/* link  */
+.container-link {
+  color: var(--c-black);
+  font-size: 18px;
+}
+/* * General */
+.general {
+  width: 100%;
+}
+/* General-block */
+.general-wrapper {
+  max-width: 970px;
+  margin: 0 auto;
+}
+/* general name */
+.general-name {
+  height: 60px;
+  width: 300px;
+}
+/* Name */
+h1 {
+  color: var(--c-black);
+  font-family: "Open Sans" serif;
+  line-height: 66px;
+  font-size: 48px;
+}
+/* Photo-block */
+.image {
+  height: 387px;
+  margin-top: 50px;
+  width: 970px;
+}
+/* photo */
+.image-my-photo {
+  width: 100%;
+}
+/* *Personal information */
+.about {
+  width: 100%;
+  background-color: var(--c-whitesmoke);
+}
+/* about-block */
+.about-wrapper {
+  margin: 0 auto;
+
+  width: 970px;
+  height: 500px;
+}
+/* title */
+.about-title {
+  padding-top: 100px;
+  margin: 0 auto;
+  text-align: center;
+  height: 40px;
+  width: 200px;
+}
+h2 {
+  margin-bottom: 50px;
+}
+/* info */
+.info {
+margin: 0 auto;
+  text-align: center;
+} 
+/* info-1 */
+.info-1 p {
+  text-align: center;
+  width: 480px;
+  height: 50px;
+  margin: 50px 0 30px 0;
+}
+/* info-2 */
+.info-2 p {
+  width: 406px;
+  height: 50px;
+}
+/* info-3 */
+.info-3 {
+  width: 321px;
+  height: 50px;
+}
+p {
+
+}
