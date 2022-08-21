@@ -1,0 +1,16 @@
+:root {
+    /* colors */
+    --c-black: #070707;
+    --c-white:#FFFFFF;
+    --c-chocolate: #D2691E;
+    --c-gray: #828282;
+    --c-royalblue: #4169E1;
+    --c-peachpuff: #FFDAB9;
+    --c-whitesmoke:#E5E5E5;
+    --c-vermeer-blue: #2B81AC;
+    --c-sorcerer: #3399CC;
+    --c-vermeer-blue-similar: #2B81AC;
+    
+    /* fonts */
+    --f-base: 14px;
+}
