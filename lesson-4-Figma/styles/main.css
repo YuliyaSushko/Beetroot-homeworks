@@ -19,7 +19,7 @@ h6 {
 }
 
 body {
-  font-family: ope;
+  font-family: "open sans" serif;
   background-color: var(--c-PeachPuff);
   font-size: var(--f-base);
   color: var(--c-black);
