@@ -3,7 +3,15 @@
   padding: 0;
   margin: 0;
 }
-
+/* body */
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: var(--c-whitesmoke);
+  font-size: var(--f-base);
+  color: var(--c-white);
+}
+/* Заголовки */
 h1,
 h2,
 h3,
@@ -13,17 +21,9 @@ h6 {background-color: var(--c-sorcerer);
   color: var(-c-white);
   padding:0;
   margin: 0;
-}
-
-body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: var(--c-whitesmoke);
-  font-size: var(--f-base);
-  color: var(--c-white);
+  
 }
 p {
-  font-size: 16px;
-  
+  font-size: 16px;  
   margin-bottom: 110px;
 }
