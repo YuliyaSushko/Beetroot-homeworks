@@ -1,22 +1,16 @@
 /* *App */
 .app {
-  border: 10px solid var(--c-vermeer-blue-similar); 
+  border: 10px solid var(--c-vermeer-blue-similar);
   background-color: var(--c-vermeer-blue);
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
-
-}
-.app-wrapper {
   min-height: 100vh;
-  max-width: 1200px;
 }
+
 h2 {
   font-size: 21px;
 }
 
 /* main */
-.main { 
+.main {
   background-color: var(--c-sorcerer);
   width: 100%;
   padding-top: 50px;
@@ -25,7 +19,7 @@ h2 {
 /* container */
 .container {
   margin: 0 auto;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 40px 35px;
 }
 /* containers */
@@ -62,13 +56,15 @@ h2 {
   width: 100%;
 }
 
-.item:hover {
-  border: 1px solid var(--c-black);
-  opacity: 1;
-}
-.item:hover~.item {
+.items-wrapper:hover .item {
   opacity: 0.3;
 }
+
+.items-wrapper:hover .item:hover {
+  opacity: 1;
+  border: 1px solid blue;
+}
+
 .item-title {
   margin-top: 25px;
 }
