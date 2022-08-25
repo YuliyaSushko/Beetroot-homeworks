@@ -2,7 +2,7 @@
 .app {
   border: 10px solid var(--c-vermeer-blue-similar);
   background-color: var(--c-vermeer-blue);
-  min-height: 100vh;
+  min-height: calc(100vh - var(--border));
 }
 
 h2 {

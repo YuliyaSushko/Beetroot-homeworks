@@ -1,0 +1,18 @@
+:root {
+  /* colors */
+  --c-black: #173A56;
+  --c-white: #ffffff;
+  --c-chocolate: #d2691e;
+  --c-gray: #828282;
+  --c-royalblue: #4169e1;
+  --c-peachpuff: #ffdab9;
+  --c-whitesmoke: #e5e5e5;
+  --c-vermeer-blue: #2b81ac;
+  --c-sorcerer: #3399cc;
+  --c-orange: #ff9900;
+
+  /* fonts */
+  --f-base: 14px;
+  /* border */
+  --border: 20px;
+}
