@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson-6-Flexbox</title>
+    <!-- favicon -->
+    <link rel="icon" type="icon" href="./favicon.ico" />
     <!-- * Styles -->
     <!-- normalize -->
     <link rel="stylesheet" href="./styles/normalize.css" />
@@ -18,23 +20,68 @@
   <body>
     <!-- * App -->
     <div class="app">
+      <div class="main-page">
+        <div class="wrapper main-page-wrapper">
+          <div>
+            <a class="main-page-link" href="../index.html">Головна сторінка</a>
+          </div>
+        </div>
+      </div>
       <!-- header -->
       <header class="header">
         <div class="wrapper header-wrapper">
           <!-- logo -->
-          <div class="header-logo">Logo</div>
+          <a href="./index.html" class="logo" title="Productly">
+            <div class="logo-image-block">
+              <img src="./assets/images/logo.png" alt="Logo" title="" />
+            </div>
+            <span class="logo-text"> Productly </span>
+          </a>
           <!-- navigation -->
-          <div class="header-navigation">navigation</div>
+          <div class="header-navigation">
+            <div class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a href="#" class="navigation-link">Product</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="#" class="navigation-link">Customers</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="#" class="navigation-link">Pricing</a>
+                </li>
+                <li class="navigation-item">
+                  <a href="#" class="navigation-link">Resources</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="header-buttons">
-            <button type="button">
+            <button title="Sing In" class="button header-button" type="button">
               <span>Sing In</span>
             </button>
-            <button type="button">
+            <button
+              title="Sing Up"
+              class="button button--orange header-button"
+              type="button"
+            >
               <span>Sing Up</span>
             </button>
           </div>
         </div>
       </header>
+      <!-- * Main -->
+      <section class="wrapper main-section">
+        <div class="main-text">
+          <h1>The Design Thinking superpowers</h1>
+          <p>
+            Tools, tutorials, design and innovation experts, all in one place!
+            The most intuitive way to imagine your next user experience.
+          </p>
+          <button class="buton button--orange header-button" type="Get started">Get started</button>
+        </div>
+        .
+      </section>
     </div>
   </body>
 </html>
