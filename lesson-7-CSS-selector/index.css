@@ -1,0 +1,123 @@
+/* navigation-block */
+.navigation {
+  background-color: var(--c-vermeer-blue-similar);
+  padding: 5px 15px;
+}
+/* navigation-link */
+.navigation-link {
+  transition: 0.35s;
+  color: var(--c-white);
+}
+.navigation-link:hover {
+  color: var(--c-mona-liza);
+}
+/* * Header */
+.header {
+  background-color: var(--c-gun-powder);
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+  height: 82px;
+  width: 100%;
+}
+/* wrapper-block */
+.wrapper {
+  max-width: 534px;
+  margin: 0 auto;
+}
+/* header-block */
+.header-wrapper {
+  padding-bottom: 12px;
+  text-align: center;
+  padding-top: 19px;
+}
+/* header-text(span) */
+.header-text {
+  color: var(--c-mona-liza);
+  line-height: 18px;
+  font-size: 16px;
+}
+/* *Main */
+.main {
+  background-color: var(--c-baltic-sea);
+  padding-left: 130px;
+  padding-right: 130px;
+}
+/* main-block */
+.main-wrapper {
+  max-width: 534px;
+}
+/* container */
+.container {
+  margin-top: 20px;
+}
+/* container li */
+.container-list {
+  list-style: none;
+}
+/* li-block */
+li {
+  display: flex;
+  align-items: center;
+  background-color: var(--c-grey-suit);
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  height: 45px;
+}
+/* li кожен 2й */
+li:nth-child(2n) {
+  background-color: var(--c-deluge);
+}
+/* li:hover */
+li:hover {
+  border-bottom: 3px solid var(--c-white);
+  border-top: 3px solid var(--c-white);
+  background-color: var(--c-smoky);
+}
+/* label */
+.container-list-label {
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+/* input */
+input {
+  width: 19px;
+  height: 19px;
+}
+/* input-block (checked) */
+input:checked ~ span {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.text-1 {
+  font-size: 18px;
+  padding-left: 16px;
+  line-height: 21px;
+}
+.text-2 {
+  font-size: 11px;
+  padding-left: 3px;
+  line-height: 13px;
+}
+.footer {
+  width: 100%;
+  padding-top: 45px;
+}
+.footer-wrapper {
+  max-width: 534px;
+  height: 45px;
+}
+.footer-block {
+ width: 100%;
+}
+button {
+  font-size: 18px;
+  line-height: 21px;
+  width: 100%;
+  height: 45px;
+  background-color: var(--c-gun-powder);
+  color: var(--c-mona-liza);
+  border: none;
+}

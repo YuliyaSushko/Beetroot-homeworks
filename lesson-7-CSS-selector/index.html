@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson-7-CSS-selector</title>
-</head>
-<body>
-  <!-- * APP -->
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-7-CSS-selector</title>
+    <!-- * Styles -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--normalize  -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- variables -->
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <!-- main -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- favicon -->
+    <link rel="stylesheet" href="./favicon.ico" />
+    <!-- local -->
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <!-- * APP -->
+    <div class="app">
+      <!-- navigation -->
+      <div class="navigation">
+      <nav>
+        <a class="navigation-link" href="../index.html"
+          >Головна сторінка</a
+        >
+      </nav>
+      </div>
+          <!-- * header -->
+        <header class="header">
+          <!-- header-block -->
+        <div class="wrapper header-wrapper">
+          <h1>CSS Dinner Shopping List</h1>
+          <span class="header-text">Let's go to the mall!</span>
+        </div>
+        </header>        
+        <!-- * main -->
+        <section class="main">
+          <div class="wrapper main-wrapper">
+            <div class="container">
+              <ul class="container-list">               
+                <li class="list">
+                  <label class="container-list-label">
+                  <input type="checkbox">
+                  <span class="text-1">A lot of pickles</span>
+                  <span class="text-2">(for the next lessons about CSS)</span>
+                </label>
+                </li>              
+                <li class="list">
+                  <label class="container-list-label">
+                    <input type="checkbox">
+                    <span class="text-1">10 apples</span>
+                    <span class="text-2">(for more CSS manipulations)</span>
+                  </label>
+                </li>
+                <li class="list">
+                  <label class="container-list-label">
+                    <input type="checkbox">
+                    <span class="text-1">20 oranges</span>
+                    <span class="text-2">(because they are awesome)</span>
+                  </label>                 
+                </li>
+                <li class="list">
+                  <label class="container-list-label">
+                    <input type="checkbox">
+                    <span class="text-1">13 plates</span>
+                    <span class="text-2">(hm... they always dissapear)</span>
+                  </label>                  
+                </li>
+                <li class="list">
+                  <label class="container-list-label">
+                    <input type="checkbox">
+                    <span class="text-1">15 bentos</span>
+                  </label>            
+                </li>
+                <li class="list">
+                  <label class="container-list-label">
+                    <input type="checkbox">
+                    <span class="text-1">1 bottle of Sake</span>
+                    <span class="text-2">(for my friends)</span>
+                  </label>                   
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <form class="wrapper footer-wrapper">
+            <div class="footer-block">
+            <button name="button">Bon appetit :)</button>
+          </div>
+        </form>
+        </footer>  
+      </div>      
+    </div>
+  </body>
 </html>
