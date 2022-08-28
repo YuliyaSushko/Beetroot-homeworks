@@ -6,6 +6,7 @@
 }
 /* Перелік уроків */
 .lessons {
+    padding-left: 50px;
     color: #350853;
     font-size: 20px;
 }
