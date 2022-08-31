@@ -4,8 +4,9 @@
   margin: 0;
 }
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: var( --c-white);
-  color: var(--c-black);
+  color: var(--c-monochromatic);
 }
 .main-page  {
   background-color:var(--c-sorcerer);

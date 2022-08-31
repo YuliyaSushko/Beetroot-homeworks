@@ -12,9 +12,11 @@
   --c-orange: #ff9900;
   --c-blue: #173A56;
   --c-blue-light:#bcd0e5;
+  --c-monochromatic: #2F281E;
 
   /* fonts */
   --f-base: 14px;
+  --ff-montserrat: 'Montserrat', sans-serif;
   /* border */
   --border: 20px;
 

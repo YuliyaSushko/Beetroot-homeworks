@@ -53,3 +53,32 @@ color: var(--c-orange);
   white-space: nowrap;
   margin-right: 10px;
 }
+.main-section {
+  display: flex;
+  padding-top: 70px;
+}
+.main-text {
+padding-top: 97px;
+max-width: 500px;
+}
+.main-text-1{
+font-weight: 700;
+font-size: 44px;
+line-height: 54px;
+}
+.main-text-2{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.image {
+  width: 644px;
+}
+img {
+  width: 100%;
+}
+.main-button {
+  width: 180px;
+  height: 50px;
+  border: none;
+}
