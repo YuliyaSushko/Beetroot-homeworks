@@ -53,7 +53,7 @@
 
 .line-90 {
   transform: rotate(90deg);
-  width: calc(100% - var(--r-90));
+  width: calc(90% - var(--r-90));
 }
 
 .line-135 {
