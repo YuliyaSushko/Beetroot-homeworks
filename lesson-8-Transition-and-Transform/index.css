@@ -1,0 +1,205 @@
+
+/* navigation-block */
+.navigation {
+  background-color: var(--c-vermeer-blue-similar);
+  padding: 5px 15px;
+}
+
+/* navigation-link */
+.navigation-link {
+  transition: 0.35s;
+  color: var(--c-white);
+}
+
+/* navigation hover */
+.navigation-link:hover {
+  color: var(--c-mona-liza);
+}
+
+/* block spiner */
+.spiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  transition: var(--t-normal);
+  transform-origin: center;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  border: 6px solid var(--c-grey);
+  width: calc(100% - var(--r-main-circle));
+  background-color: var(--c-grey);
+  position: absolute;
+  top: calc(50%-64px);
+  /* transition-property: width; */
+}
+
+
+.line-45 {
+  transform: rotate(45deg);
+  width: calc(100% - var(--r-45));
+}
+
+.line-90 {
+  transform: rotate(90deg);
+  width: calc(100% - var(--r-90));
+}
+
+.line-135 {
+  transform: rotate(135deg);
+  width: calc(100% - var(--r-90));
+}
+
+.line:hover {
+  width: calc(100% - 2 * var(--r-main-circle));
+}
+
+.main-bubble{
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  background-color: var(--c-yellow);
+  transition: var(--t-normal);
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--c-secondary);
+}
+
+.small-bubble {
+  width: 128px;
+  height: 128px;
+  border-radius: var(--b-radius);
+  top: 0;
+  right: calc(50% - var(--r-1));
+  transition: var(--t-normal);
+}
+
+.small-bubble:hover {
+  transform: translate(0, 40px);
+}
+.small-bubble:hover .line {
+  width: cal(calc(90% - var(--r-45)));
+}
+
+.small-bubble-2 {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  border-radius: var(--b-radius);
+  bottom: 0;
+  right: calc(50% - var(--r-1));
+  transition: var(--t-normal);
+}
+
+.small-bubble-2:hover {
+  transform: translate(0, -40px);
+}
+
+.medium-bubble {
+  position: absolute;
+  width: 156px;
+  height: 156px;
+  border-radius: var(--b-radius);
+  top: calc(50% - var(--r-90));
+  left: 0;
+  transition: var(--t-normal);
+
+}
+.medium-bubble:hover {
+  transform: translate(15px, 0);
+}
+
+.medium-bubble-2 {
+  position: absolute;
+  width: 156px;
+  height: 156px;
+  border-radius: var(--b-radius);
+  top: calc(50% - var(--r-90));
+  right: 0;
+  transition: var(--t-normal);
+
+}
+.medium-bubble-2:hover {
+  transform: translate(-15px, 0);
+}
+.big-bubble {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: var(--b-radius);
+  top: 20px;
+  left: 20px;
+  transition: var(--t-normal);
+
+}
+.big-bubble:hover {
+  transform: translate(42px, 42px);
+}
+.big-bubble-2 {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: var(--b-radius);
+  top: 20px;
+  right: 20px;
+  transition: var(--t-normal);
+
+}
+.big-bubble-2:hover {
+  transform: translate(-42px, 42px);
+
+}
+.big-bubble-3 {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: var(--b-radius);
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  transition: var(--t-normal);
+
+}
+.big-bubble-3:hover {
+  transform: translate(42px, -42px);
+
+}
+.big-bubble-4 {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: var(--b-radius);
+  bottom: 20px;
+  right: 20px;
+  transition: var(--t-normal);
+
+}
+.big-bubble-4:hover {
+  transform: translate(-42px, -42px);
+}
+.main-bubble:hover ~ .container{
+  transform: rotate(3turn) scale(0.8);  
+}
+.main-bubble:hover{
+  background-color: aqua;
+}

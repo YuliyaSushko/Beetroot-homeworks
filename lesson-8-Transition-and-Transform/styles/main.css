@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* body */
+body {
+  background-color: var(--c-dark-grey);
+}
+/* main page */
+a{
+  color: var(--c-white);
+  text-decoration: none;
+  font-size: 18px; 
+}
