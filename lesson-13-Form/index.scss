@@ -8,9 +8,6 @@
 //  *Components
 @import "./scss/components/index";
 
-
-
-
 // Content
 .content {
   background-color: $c-white;
@@ -141,7 +138,7 @@ button[type="reset"] {
 .block__image__files {
   margin-right: 20px;
 }
-.block__image--photo{
+.block__image--photo {
   border-radius: 50%;
 }
 
