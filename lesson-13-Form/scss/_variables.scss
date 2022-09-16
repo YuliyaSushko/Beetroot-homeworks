@@ -1,0 +1,21 @@
+//  *Colors
+$c-black: #1C1C1C;
+$c-white: #FFFFFF;
+$c-mona-liza:#FF8984;
+$c-vermeer-blue-similar: #2b81ac;
+$c-white-grey:#e4e4e4;
+$c-blue:#007BFF;
+$c-background: #E5E5E5;
+
+
+// * Font size
+$fs-base: 14;
+
+// * Font family
+$ff-base: 'Roboto', sans-serif;
+
+// * Bezier
+$b-normal: cubic-bezier(0.4, 0, 0.2, 1);
+
+// * Transition
+$t-normal: 0.35s $b-normal;

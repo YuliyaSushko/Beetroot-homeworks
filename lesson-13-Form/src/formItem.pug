@@ -1,0 +1,8 @@
+mixin formItem(title, type = 'text', name, selectMode = false)
+  label.form-item
+    .form-item__title=title 
+    if selectMode
+      input(type=type name=name).form-item__input
+    else 
+      select(name=name).form-item.form-item__input    
+        option Select

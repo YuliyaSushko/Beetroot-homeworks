@@ -1,0 +1,9 @@
+.navigation {
+  &__link {
+    color: $c-white;
+    transition: $t-normal ;
+  }
+    &__link:hover {
+      color:$c-mona-liza;
+    }
+}

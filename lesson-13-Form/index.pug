@@ -1,0 +1,98 @@
+//- Підлючення компонентів
+include ./src/header 
+include ./src/wrapper 
+include ./src/navigation
+include ./src/footer
+include ./src/formItem  
+include ./src/select 
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Lesson-13-Form
+    //- * Styles
+    //- fonts
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  //- icon
+  link(rel="stylesheet" href="favicon.ico")
+  //- local
+  link(rel="stylesheet" href="index.css")
+  body 
+    //- * APP
+    .app
+      //- * Header
+      +headerMixin()
+      .content
+        .block 
+          h1.form__title Create an Account
+          .forms
+            +formItem('First Name',  'text', 'first Name', true)
+            +formItem('Last Name',  'text', 'last name', true)
+          +formItem('E-mail',  'text', 'e-mail', true, required)
+          .form-item__title.subtitle We'll never share your email with anyone else. 
+          .forms_gender
+            label
+              input(type="radio" name="gender" value="Male")
+              span Male
+            label
+              input(type="radio" name="gender" value="Female")
+              span Female
+          .forms
+            +formItem('Country',  'text', 'country', false)
+            +formItem('Last Name',  'text', 'last name', true)
+          .button
+            button.button(type="submit") 
+              span.button__text Sing up
+          .form-item__title.subtitle-2
+            p By clicking the 'Sign Up' button, you confirm that you accept our
+            | 
+            a(href="#" class="subtitle__link" target="_blank") Terms of Use
+            |  and 
+            a(href="#" class="subtitle__link" target="_blank") Privacy Policy                  
+          .form__footer 
+            p.form__footer--text Have an account? 
+              a(href="#" class="subtitle__link .footer--text" target="_blank") Log In
+
+
+
+
+
+
+
+        .block 
+          h1.title Profile
+          .block__image
+            .block__image--photo
+              img(src="/assets/images/image.jpg" alt="profile")
+            .block__image__files
+              .block__image--upload-photo
+                label
+                  input(type="file" class="form-item__input")
+                  span
+                  .block__image--icon
+                    img(src="./assets/images/camera.png" alt="profile")
+              .block__image--subtitle Up to 1 MB (300x300 px)
+            button.button(type="reset")
+              .block__image--icon
+                img(src="./assets/images/icon.svg" alt="profile")
+
+
+
+
+
+
+          .forms
+            +formItem('First Name',  'text', 'first Name', true)
+            +formItem('E-mail',  'e-mail', 'e-mail', true)
+          .forms
+            +formItem('Country',  'text', 'country', false)
+            +formItem('City',  'text', 'city', true)
+          .forms
+            +formItem('Zip Code',  'text', 'zip code', true)
+            +formItem('Phone Number',  'text', 'Phone Number', true)
+          div  
+            button.button.button--full(type="submit") Update

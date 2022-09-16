@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: $ff-base ;
+  height: 3000px; //TODO ---> remove in future
+}
+ul {
+  list-style-type: none;
+}
+.app {
+  background-color: $c-background;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
