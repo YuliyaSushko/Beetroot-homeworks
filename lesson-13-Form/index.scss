@@ -141,6 +141,10 @@ button[type="reset"] {
 .block__image__files {
   margin-right: 20px;
 }
+.block__image--photo{
+  border-radius: 50%;
+}
+
 .block__image__files {
   display: flex;
   flex-wrap: wrap;
