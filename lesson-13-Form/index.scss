@@ -9,8 +9,11 @@
 @import "./scss/components/index";
 
 
+
+
+// Content
 .content {
-  background-color:$c-white ;
+  background-color: $c-white;
   grid-template-columns: repeat(2, 1fr);
   display: grid;
   padding: 15px;
@@ -18,6 +21,7 @@
   margin-top: 50px;
 }
 
+// Block
 .block {
   position: relative;
   border: 2px solid $c-white-grey;
@@ -28,25 +32,22 @@
 }
 .block:hover {
   border: 2px solid $c-blue;
-
 }
 
+// Form__title  h1
 .form__title {
   font-family: $ff-base;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
 }
+// forms
 .forms {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
-.form__error {
-  color: red;
-  font-size: 12px;
-  visibility: hidden;
-}
+// subtitle
 .subtitle {
   padding-bottom: 20px;
   padding-top: 7px;
@@ -56,15 +57,19 @@
   line-height: 18px;
   margin: 0 auto;
 }
+// form gender (radio)
 .forms_gender {
   display: flex;
 }
-input [type="radio"]{
+// input type=radio
+input [type="radio"] {
   padding: 8px;
 }
-label{
+// label
+label {
   margin-right: 20px;
 }
+//* button
 .button {
   border: 1px solid $c-white-grey;
   background-color: $c-blue;
@@ -80,7 +85,6 @@ label{
   height: 38px;
   width: 100%;
   margin: 0 auto;
-  
 }
 
 .button--full {
@@ -88,14 +92,12 @@ label{
   max-width: 150px;
 }
 
-
-
 .button__text {
   font-family: $ff-base;
   line-height: 1;
   margin: 0 auto;
 }
-button[type="reset"]{
+button[type="reset"] {
   height: 30px;
   border: 1px solid $c-white-grey;
   border-radius: 6px;
@@ -107,15 +109,15 @@ button[type="reset"]{
   line-height: 18px;
   text-align: center;
 }
-.subtitle__link{
+.subtitle__link {
   text-decoration: none;
-  color:$c-blue;
+  color: $c-blue;
 }
-
+// * footer
 .form__footer {
   border-top: 1px solid $c-white-grey;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 16px;
@@ -127,13 +129,13 @@ button[type="reset"]{
   align-items: center;
   margin-right: 20px;
 }
+// images
 .image {
   margin-top: 15px;
   margin-left: 15px;
 }
 .block__image {
   display: flex;
-  
 }
 .block__image--photo,
 .block__image__files {
@@ -148,7 +150,6 @@ button[type="reset"]{
   margin-top: 10px;
 }
 .block__image--upload-photo {
-  
   border-radius: 3px;
   height: 30px;
   display: flex;
@@ -161,17 +162,18 @@ button[type="reset"]{
   height: 15px;
 }
 .block__image--subtitle {
-font-style: 13px;
-font-weight: 400;
-line-height: 18px;
-margin-top: 10px;
+  font-style: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 10px;
 }
+
+// *input
 input[type="file"] {
   display: none;
 }
 input {
-border: 1px solid $c-white-grey;
-
+  border: 1px solid $c-white-grey;
 }
 input:hover {
   border: 1px solid $c-blue;

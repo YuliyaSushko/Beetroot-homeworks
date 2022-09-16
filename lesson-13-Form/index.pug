@@ -26,9 +26,14 @@ html(lang="en")
     .app
       //- * Header
       +headerMixin()
+      //- Content
       .content
+        //- Block-1
         .block 
+          //- title
           h1.form__title Create an Account
+          
+          //- Main content
           .forms
             +formItem('First Name',  'text', 'first Name', true)
             +formItem('Last Name',  'text', 'last name', true)
@@ -53,6 +58,8 @@ html(lang="en")
             a(href="#" class="subtitle__link" target="_blank") Terms of Use
             |  and 
             a(href="#" class="subtitle__link" target="_blank") Privacy Policy                  
+          
+          //- Footer
           .form__footer 
             p.form__footer--text Have an account? 
               a(href="#" class="subtitle__link .footer--text" target="_blank") Log In
@@ -62,9 +69,12 @@ html(lang="en")
 
 
 
-
+        //-  Block-2
         .block 
+          //-  Title
           h1.title Profile
+
+          //-  Main content
           .block__image
             .block__image--photo
               img(src="/assets/images/image.jpg" alt="profile")
