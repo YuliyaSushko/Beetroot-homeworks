@@ -1,0 +1,30 @@
+:root {
+  
+  /** Colors */
+  --c-white: #ffffff;
+  --c-card-name-text:#282528;
+  --c-title-subtitle-text:#3C3C3C;
+  --c-hover-card:#18B5DC;
+  --c-dark-grey: #646464;
+  --c-black: #282528;
+  --c-yellow: #ffcf6d;
+  --c-grey: #808391;
+  --c-mona-liza:#FF8984;
+  --c-vermeer-blue-similar: #2b81ac;
+
+   /* border */
+  --border: 1px;
+  /* * cubic-bezier */
+  --b-normal:cubic-bezier(0,1.35,.96,1.18);
+  /* * transition */
+  --t-normal: all 1.5s var(--b-normal);
+  /* radius */
+  --r-main-circle: 128px;
+  --r-1: 60px;
+  --r-45:85px;
+  --r-90:78px;
+  --r-135:85px;
+  --b-radius:50%;
+  /* --transform: scale(1.2); */
+
+}

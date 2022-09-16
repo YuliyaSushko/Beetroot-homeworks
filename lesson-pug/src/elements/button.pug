@@ -1,0 +1,4 @@
+mixin button(text="default text", type="button", colorized=false)
+  -const classes = colorized ? 'button--colorized' : ""  
+  button(type=type class=colorized ? 'button--colorized': '').button
+    span=text

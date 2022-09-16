@@ -1,0 +1,12 @@
+.list-item {
+  color: black;
+  background-color: blue;
+
+  &--colorized {
+    color: red;
+  }
+}
+
+.list-item--colorized {
+  color: red;
+}

@@ -1,0 +1,19 @@
+.header {
+  &__subtitle {
+    font-size: em(18);
+    font-weight: 500;
+    font-family: $ff-base;
+    line-height: em(24);
+    color: $c-dark-grey;
+  }
+
+  &__title {
+    @include flex;
+  }
+
+  &__some {
+    @include flex(true);
+
+    @include fixed(0, 0, auto, 0)
+  }
+}
