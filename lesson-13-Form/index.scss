@@ -12,20 +12,20 @@
 .content {
   background-color: $c-white;
   grid-template-columns: repeat(2, 1fr);
-  display: grid;
-  padding: 15px;
-  grid-gap: 30px;
   margin-top: 50px;
+  grid-gap: 30px;
+  padding: 15px;
+  display: grid;
 }
 
 // Block
 .block {
   position: relative;
   border: 2px solid $c-white-grey;
-  padding-top: 55px;
   padding-bottom: 55px;
   padding-right: 35px;
   padding-left: 35px;
+  padding-top: 55px;
 }
 .block:hover {
   border: 2px solid $c-blue;
@@ -34,9 +34,9 @@
 // Form__title  h1
 .form__title {
   font-family: $ff-base;
+  line-height: 32px;
   font-weight: 500;
   font-size: 24px;
-  line-height: 32px;
 }
 // forms
 .forms {
@@ -46,12 +46,12 @@
 }
 // subtitle
 .subtitle {
-  padding-bottom: 20px;
-  padding-top: 7px;
   font-family: $ff-base;
-  font-weight: 400;
-  font-size: 13px;
+  padding-bottom: 20px;
   line-height: 18px;
+  font-weight: 400;
+  padding-top: 7px;
+  font-size: 13px;
   margin: 0 auto;
 }
 // form gender (radio)
@@ -78,15 +78,15 @@ label {
   font-size: 15px;
   padding: 8 10px;
   color: $c-white;
+  margin: 0 auto;
   border: none;
   height: 38px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .button--full {
-  width: 100%;
   max-width: 150px;
+  width: 100%;
 }
 
 .button__text {
@@ -95,16 +95,16 @@ label {
   margin: 0 auto;
 }
 button[type="reset"] {
-  height: 30px;
   border: 1px solid $c-white-grey;
-  border-radius: 6px;
   background-color: $c-white;
+  border-radius: 6px;
+  height: 30px;
 }
 .form-item__title.subtitle-2 {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 18px;
   text-align: center;
+  line-height: 18px;
+  font-weight: 400;
+  font-size: 13px;
 }
 .subtitle__link {
   text-decoration: none;
@@ -113,23 +113,23 @@ button[type="reset"] {
 // * footer
 .form__footer {
   border-top: 1px solid $c-white-grey;
-  display: flex;
   justify-content: center;
-  margin-top: 20px;
-  padding-top: 20px;
   padding-bottom: 16px;
+  padding-top: 20px;
+  margin-top: 20px;
+  display: flex;
 }
 .form__footer.footer--text {
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 500;
   align-items: center;
   margin-right: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 15px;
 }
 // images
 .image {
-  margin-top: 15px;
   margin-left: 15px;
+  margin-top: 15px;
 }
 .block__image {
   display: flex;
@@ -143,30 +143,30 @@ button[type="reset"] {
 }
 
 .block__image__files {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
 }
 .block__image--subtitle {
   margin-top: 10px;
 }
 .block__image--upload-photo {
-  border-radius: 3px;
-  height: 30px;
-  display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  width: 150px;
+  border-radius: 3px;
+  display: flex;
+  width: 150px; 
+  height: 30px;
 }
 .block__image--icon {
-  width: 15px;
   height: 15px;
+  width: 15px;
 }
 .block__image--subtitle {
-  font-style: 13px;
-  font-weight: 400;
   line-height: 18px;
   margin-top: 10px;
+  font-style: 13px;
+  font-weight: 400;
 }
 
 // *input
