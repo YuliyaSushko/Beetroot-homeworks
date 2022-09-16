@@ -64,11 +64,6 @@ html(lang="en")
             p.form__footer--text Have an account? 
               a(href="#" class="subtitle__link .footer--text" target="_blank") Log In
 
-
-
-
-
-
         //-  Block-2
         .block 
           //-  Title
@@ -77,7 +72,7 @@ html(lang="en")
           //-  Main content
           .block__image
             .block__image--photo
-              img(src="/assets/images/image.jpg" alt="profile")
+              img(src="./assets/images/image.jpg" alt="profile")
             .block__image__files
               .block__image--upload-photo
                 label
@@ -89,12 +84,6 @@ html(lang="en")
             button.button(type="reset")
               .block__image--icon
                 img(src="./assets/images/icon.svg" alt="profile")
-
-
-
-
-
-
           .forms
             +formItem('First Name',  'text', 'first Name', true)
             +formItem('E-mail',  'e-mail', 'e-mail', true)
