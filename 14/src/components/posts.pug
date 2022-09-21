@@ -1,0 +1,39 @@
+mixin posts()
+  section.posts
+    .wrapper.posts__wrapper
+      .posts__head
+        h2.posts__title Latest Posts
+        a(class="arrow" href="#")
+          span.arow__title View All
+          img(src="./assets/images/arrow1.jpg" alt="photo")
+      .posts__cards 
+        .posts__post
+          .post__image
+            img( class="posts__photo" src="./assets/images/image7.jpg", alt="photo")
+          .post__content
+            p.post__subtitle Interface Design
+            p.text__date 8 June, 2020
+            h4.post__title UX traffic light colours
+            p.text__info UI has to make a huge visual difference
+            | between warning, an alert and a success.
+        .posts__post.posts__post--revers
+          .post__image
+            img( class="posts__photo" src="./assets/images/image2.jpg", alt="photo")
+          .post__content
+            p.post__subtitle Technology
+            p.text__date 6 May, 2020
+            h4.post__title Using UX Design to Build a 
+              br
+              | Sustainable Future
+            p.text__info UI has to make a huge visual difference 
+            | between warning, an alert and a success.
+        .posts__post
+          .post__image
+            img( class="posts__photo" src="./assets/images/image4.jpg", alt="photo")
+          .post__content
+            p.post__subtitle Visual Design
+            p.text__date 8 June, 2020
+            h4.post__title Creativity vs. UX
+            p.text__info Is it possible to create a delightful user 
+            | experience without following best UX practices?
+        
