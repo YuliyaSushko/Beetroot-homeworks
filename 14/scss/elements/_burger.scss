@@ -1,10 +1,11 @@
 .burger {
   background-color: transparent;
+  transition:$t-normal;
+  position: relative;
   border-radius: 3px;
   cursor: pointer;
   padding: 5px;
   border: none;
-  transition:$t-normal;
 
   &:hover {
     background-color: rgba($c-black, 0.1);

@@ -25,6 +25,20 @@
     display: flex;
   }
 
+  &__navigation {
+  transition: $t-normal;
+  
+  
+    @include media("<=tablet") {
+      pointer-events: none;
+      opacity: 0;
+    }
+    &--show {
+      pointer-events: all;
+      opacity: 0;
+    }
+  }
+
   &__search {
     margin-left: 80px;
   }

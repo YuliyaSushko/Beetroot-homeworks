@@ -1,6 +1,4 @@
-@import './scss/index';
-
-
+@import "./scss/index";
 
 //  Text subtitle
 .text__subtitle {
@@ -11,10 +9,10 @@
   margin-top: 85px;
   color: $c-grey;
 
-  @include media('<=tablet') {
+  @include media("<=tablet") {
     margin-top: 20px;
   }
-  @include media('<=phone') {
+  @include media("<=phone") {
     margin-top: 25px;
   }
 }
@@ -26,7 +24,6 @@
   font-weight: 500;
   font-size: 23px;
   margin-top: 30px;
-
 }
 .text__date {
   font-family: $ff-base;

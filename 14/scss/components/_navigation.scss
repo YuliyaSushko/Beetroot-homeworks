@@ -1,4 +1,5 @@
 .navigation {
+  display: none;
   background-color: $c-white;
   @include media('<=tablet') {
     position:fixed;
