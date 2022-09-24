@@ -18,7 +18,7 @@ h1 {
   font-size: 48px;
   line-height: 67px;
   font-weight: 600;
-
+  
   @include media("<=tablet") {
     font-size: 36px;
     line-height: 50px;
