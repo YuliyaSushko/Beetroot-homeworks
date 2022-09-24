@@ -1,0 +1,21 @@
+// * Main page
+.main-page {
+  background-color: $c-vermeer-blue-similar;
+  align-items: center;
+  padding: 5px 15px;
+  position: fixed;
+  color: $c-white;
+  display: flex;
+  height: 50px;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  top: 0;
+  &__link {
+    transition: $t-normal;
+    color: $c-white;
+  }
+  &__link:hover {
+    color: $c-mona-liza;
+  }
+}

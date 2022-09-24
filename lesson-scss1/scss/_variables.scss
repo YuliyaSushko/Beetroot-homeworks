@@ -9,18 +9,19 @@ $c-vermeer-blue-similar: #2b81ac;
 $c-grey: #CCCCCC;
 $c-dark-grey:#666666;
 
-
 // * Font size
 $fs-base: 14;
 
 // * Font family
-$ff-base: 'Delius Unicase', sans-serif;
+$ff-base: "Raleway", sans-serif;
+$ff-second: "Roboto", sans-serif;
+$ff-next: "Open Sans", sans-serif;
 
 // * Bezier
 $b-normal: cubic-bezier(0.4, 0, 0.2, 1);
 
 // * Transition
-$t-normal: 0.35s $b-normal;
+$t-normal: 0.5s $b-normal;
 
 // Box Shadow
 $bs-normal: 1px 1px 5px rgba($c-black, 0.1);

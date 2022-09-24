@@ -1,7 +1,7 @@
 @import "./scss/index";
+@import './scss/components/main-page';
 
 .container {
-  width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -201,12 +201,15 @@
 }
 
 .block__subtitle {
-  display: flex;
   position: absolute;
-  justify-content: space-between;
-  bottom: 0;
-  padding: 20px;
+  bottom: 20px;
 }
+.block__info {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 .svg {
   width: 50px;
   height: 50px;

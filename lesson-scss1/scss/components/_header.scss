@@ -1,0 +1,35 @@
+.header {
+  position: relative;
+  margin-top: 80px;
+
+  &__wrapper {
+    border-bottom: 1px solid $c-gold;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    max-width: 450px;
+  }
+
+
+  &__subtitle {
+    font-family: $ff-base;
+    color: $c-dark-grey;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &__title {
+    font-family: $ff-second;
+    line-height: 66px;
+    font-weight: 900;
+    font-size: 60px;
+    color: $c-gold;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: -15px;
+  }
+}
