@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
+    padding: 20px;
     height: 100%;
   }
 
@@ -19,7 +20,12 @@
     max-width: 140px;
     width: 100%;
   }
-
+  &__navigation {
+    background-color: red;
+    @include media(">=320px", "<768px") {
+      display: block;
+    }
+  }
   &__block {
     align-items: center;
     display: flex;
@@ -29,6 +35,6 @@
     margin-left: 80px;
   }
   &__burger {
-    margin-left: 40px;
+    margin-left: 170px;
   }
 }

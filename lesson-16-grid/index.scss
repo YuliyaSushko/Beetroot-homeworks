@@ -1,0 +1,242 @@
+@import "./scss/index";
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.blocks {
+  border: 1px solid red;
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "a b b"
+    "c c d"
+    "e f f";
+}
+// block-1
+.blocks-1 {
+  grid-template-areas:
+    "a b b"
+    "c c d"
+    "e f f";
+}
+// blocks-2
+.blocks-2 {
+  grid-template-areas:
+    "a b b"
+    "c c d"
+    "c c d"
+    "e e q";
+}
+
+.blocks-3 {
+  grid-template-areas:
+    "a b c"
+    "d b e"
+    "q r e"
+    "q y y"
+    "o o p";
+}
+
+// @media (max-width: 480px) {
+//   .blocks {
+//     grid-template-columns: 1fr;
+//   }
+// }
+
+.block {
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid green; //Todo remove in future
+}
+.block__icon {
+  display: flex;
+  justify-content: space-between;
+  top: 20px;
+}
+// .icon__heart {
+//   width: 40px;
+//   height: 40px;
+// }
+
+.block-1 {
+  background-image: url("./assets/images/image 21.jpg");
+  max-height: 370px;
+  max-width: 370px;
+  grid-area: a;
+}
+.block-2 {
+  background-image: url("./assets/images/image 1.jpg");
+  height: 370px;
+  width: 770px;
+  grid-area: b;
+}
+.block-3 {
+  background-image: url("./assets/images/image 2.jpg");
+  height: 370px;
+  width: 770px;
+  grid-area: c;
+}
+.block-4 {
+  background-image: url("./assets/images/image 12.jpg");
+  height: 370px;
+  width: 370px;
+  grid-area: d;
+}
+.block-5 {
+  background-image: url("./assets/images/image 13.jpg");
+  height: 370px;
+  width: 370px;
+  grid-area: e;
+}
+.block-6 {
+  background-image: url("./assets/images/image 3.jpg");
+  height: 370px;
+  width: 770px;
+  grid-area: f;
+}
+.block-7 {
+  background-image: url("./assets/images/image 14.jpg");
+  height: 370px;
+  width: 370px;
+  grid-area: a;
+}
+.block-8 {
+  background-image: url("./assets/images/image 4.jpg");
+  height: 370px;
+  width: 770px;
+  grid-area: b;
+}
+.block-9 {
+  background-image: url("./assets/images/image 5.jpg");
+  height: 770px;
+  width: 770px;
+  grid-area: c;
+}
+.block-10 {
+  background-image: url("./assets/images/image 6.jpg");
+  height: 770px;
+  width: 370px;
+  grid-area: d;
+}
+.block-11 {
+  background-image: url("./assets/images/image 7.jpg");
+  height: 370px;
+  width: 770px;
+  grid-area: e;
+}
+.block-12 {
+  background-image: url("./assets/images/image 15.jpg");
+  height: 370px;
+  width: 370px;
+  grid-area: q;
+}
+.block-13 {
+  background-image: url("./assets/images/image 16.jpg");
+  height: 370px;
+  width: 370px;
+  grid-area: a;
+}
+.block-14 {
+  background-image: url("./assets/images/image 22.jpg");
+  height: 770px;
+  width: 370px;
+  grid-area: b;
+}
+.block-15 {
+  background-image: url("./assets/images/image 17.jpg");
+  height: 370px;
+  width: 370px;
+  grid-area: c;
+}
+.block-16 {
+  background-image: url("./assets/images/image 18.jpg");
+  height: 370px;
+  width: 370px;
+  grid-area: d;
+}
+.block-17 {
+  background-image: url("./assets/images/image 10.jpg");
+  height: 770px;
+  width: 370px;
+  grid-area: e;
+}
+.block-18 {
+  background-image: url("./assets/images/image 11.jpg");
+  height: 770px;
+  width: 370px;
+  grid-area: q;
+}
+.block-19 {
+  background-image: url("./assets/images/image 19.jpg");
+  height: 370px;
+  width: 370px;
+  grid-area: r;
+}
+.block-20 {
+  background-image: url("./assets/images/image 8.jpg");
+  height: 370px;
+  width: 770px;
+  grid-area: y;
+}
+.block-21 {
+  background-image: url("./assets/images/image 9.jpg");
+  height: 370px;
+  width: 770px;
+  grid-area: o;
+}
+.block-22 {
+  background-image: url("./assets/images/image 20.jpg");
+  height: 370px;
+  width: 370px;
+  grid-area: p;
+}
+
+.block__title {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+.block__subtitle {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 20px;
+}
+.svg {
+  width: 50px;
+  height: 50px;
+  fill: red;
+  transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.svg:hover {
+  fill: green;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon:hover {
+  color: blue;
+}
+
+.icon-font {
+  font-size: 14px;
+}
+.green {
+  color: green;
+}
+.icon-red {
+  color: blue;
+}
+.icon-yellow {
+  color: yellow;
+}

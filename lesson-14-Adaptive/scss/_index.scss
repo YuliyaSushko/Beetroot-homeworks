@@ -1,13 +1,15 @@
-@import './normalize';
-// Підключення медіа
-@import './media';
+// Normalize
+@import "./normalize";
+
+@import "./media";
+
 // Спочатку викликаю змінні, а потім файли в яких ці змінні використовуються
-@import './variables';
+@import "./variables";
 // Базові стилі
-@import './main';
+@import "./main";
 
 //  *Components
-@import './components/index';
+@import "./components/index";
 
 //  *Elements
-@import './elements/index';
+@import "./elements/index";

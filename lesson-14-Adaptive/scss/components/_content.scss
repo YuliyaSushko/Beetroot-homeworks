@@ -6,30 +6,23 @@
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-
-
-  
+  gap: 30px;
 }
 .content__block--revers {
-flex-direction: row-reverse;
-
+  flex-direction: row-reverse;
 }
 .content__content {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  
+
+  @include media(">=320px", "<1024px") {
+    max-width: 350px;
+  }
+  @include media(">=320px", "<768px") {
+    max-width: 300px;
+  }
 }
 .content__image {
-  height: 470px;
+  max-height: 470px;
   width: 100%;
-
-  @include media('<=tablet') {
-    height: 280px;
-    max-width:100% ;
-  }
-  @include media('<=phone') {
-    height: 250px;
-    max-width: 100%;
-  }
 }

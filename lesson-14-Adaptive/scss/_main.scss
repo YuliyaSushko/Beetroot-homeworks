@@ -9,7 +9,14 @@ body {
   font-family: $ff-base;
   color: $c-black;
 }
-
+.app {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+  // border: 1px solid red; //todo remote in future
+}
 ul {
   list-style-type: none;
 }
@@ -18,41 +25,8 @@ h1 {
   font-size: 48px;
   line-height: 67px;
   font-weight: 600;
-  
-  @include media("<=tablet") {
-    font-size: 36px;
-    line-height: 50px;
-  }
-
-  @include media("<=phone") {
-    font-size: 30px;
-    line-height: 50px;
-  }
 }
 a {
   text-decoration: none;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding-left: 35px;
-  padding-right: 35px;
-
-  @include media("<=tablet") {
-    width: 100%;
-    max-width: 698px;
-    margin: 0 auto;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  @include media("<=phone") {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}

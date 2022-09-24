@@ -2,7 +2,7 @@
   margin-top: 100px;
 }
 
-.popular__head{
+.popular__head {
   display: flex;
   justify-content: space-between;
 }
@@ -11,14 +11,20 @@
   justify-content: space-between;
   margin-top: 45px;
   gap: 30px;
+
+  @include media(">=320px", "<1000px") {
+    flex-direction: column;
+    justify-content: center;
+    
+  }
 }
 
 .post__lists {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-.post__subtitle{
+.post__subtitle {
   font-family: $ff-base;
   line-height: 166%;
   font-weight: 400;
@@ -27,7 +33,7 @@
   color: $c-grey;
 }
 
-.post__date{
+.post__date {
   font-family: $ff-base;
   line-height: 166%;
   font-weight: 400;
