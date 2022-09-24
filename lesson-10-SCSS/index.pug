@@ -1,5 +1,8 @@
+//-  * Підключення компонентів
 include ./src/components/header
 include ./src/components/main-page 
+//- * підключення елементів
+include ./src/elements/button
 
 doctype html
 html(lang="en")
@@ -67,8 +70,5 @@ html(lang="en")
               .slider__line--subbutton-small
             //- Секція для кнопки
             .slider__button 
-              //- Кнопка
-              button.button 
-                //- назва кнопки
-                span.button__title VIEW PROFILE
+              +button()
 
