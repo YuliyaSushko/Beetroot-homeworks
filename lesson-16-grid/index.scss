@@ -39,15 +39,11 @@
     "o o p";
 }
 
-// @media (max-width: 480px) {
-//   .blocks {
-//     grid-template-columns: 1fr;
-//   }
-// }
 
 .block {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
-  position: relative;
   border-radius: 20px;
   border: 1px solid green; //Todo remove in future
 }
@@ -56,10 +52,7 @@
   justify-content: space-between;
   top: 20px;
 }
-// .icon__heart {
-//   width: 40px;
-//   height: 40px;
-// }
+
 
 .block-1 {
   background-image: url("./assets/images/image 21.jpg");
@@ -201,8 +194,7 @@
 }
 
 .block__subtitle {
-  position: absolute;
-  bottom: 20px;
+  margin-top: auto;
 }
 .block__info {
   display: flex;

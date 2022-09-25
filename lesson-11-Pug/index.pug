@@ -1,19 +1,75 @@
-//- * Include
-include ./src/elements/index
-include ./src/components/index
+//-  * Підключення компонентів
+include ./src/components/header
+include ./src/components/main-page 
+//- * підключення елементів
+include ./src/elements/button
 
-//- * Base
 doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Pug
-    link(rel="stylesheet" href="index.css")
-  body
-    .app
-      +header()
-        +button()
+    title Lesson-SCSS
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto:wght@900&display=swap" rel="stylesheet">
+  //- Favicon
+  link(rel="stylesheet" href="favicon.ico")
+  //- Local style
+  link(rel="stylesheet" href="index.css")
 
+  body 
+    +main-page()
+    .app 
+      +header()
+      //- * Основна секція
+      section.slider 
+        .wrapper.slider__wrapper
+          //- Секція з фото
+          .slider__photo
+            //- блок-обгортка для фото
+            .slider__photo__block
+              img(class="slider__photo__image" src="./assets/images/photo.jpg" alt="photo")
+              //-  Блоки. що утворюють рамку навколо фото
+              .slider__line.slider__line--left-top
+              .slider__line.slider__line--left-bottom
+              .slider__line.slider__line--right-top
+              .slider__line.slider__line--right-bottom
+          //- Секція з описом профіля
+          .slider__profile 
+            //- ім'я
+            .slider__name Sahariar Kabir
+            .slider__line--subtitle
+            //- професія
+            .slider__profesion Frontend Developer
+            //- соціальні мережі
+            .slider__social 
+              //- фейсбук
+              a(class="slider__link" href="#")
+                img(class="icon" src="./assets/images/facebook.jpg" alt="facebook")
+              //- твіттер
+              a(class="slider__link" href="#")
+                img(class="icon" src="./assets/images/twitter.jpg" alt="twitter")
+              //- гугл
+              a(class="slider__link" href="#")
+                img(class="icon" src="./assets/images/google.jpg" alt="google")
+              //- лінкедін
+              a(class="slider__link" href="#")
+                img(class="icon" src="./assets/images/linkedin.jpg" alt="linkedin")
+            //-  опис
+            .slider__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.
+            //- кнопка для переходу до розгорнутого профілю
+            //- переривчаста лінія перед кнопкою
+            .slider__line--subbutton
+              //- коротка лінія
+              .slider__line--subbutton-small
+              //- довга лінія
+              .slider__line--subbutton-large
+              //- коротка лінія
+              .slider__line--subbutton-small
+            //- Секція для кнопки
+            .slider__button 
+              +button()
+              
 

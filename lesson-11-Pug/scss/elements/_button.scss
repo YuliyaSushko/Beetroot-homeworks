@@ -1,3 +1,10 @@
 .button {
-  background-color: blue;
+  background-color: transparent;
+  border: 1px solid $c-gold;
+  padding: 5px 10px;
+}
+.button__title {
+  font-family: $ff-next;
+  line-height: 14px;
+  font-size: 14px;
 }

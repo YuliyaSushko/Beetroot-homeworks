@@ -1,4 +1,147 @@
-@import './scss/index';
-@import './assets/fonts/';
-@import './src/components/index'; 
-@import './src/elements/index';
+// ПІдключення основного файлу scss/index.scss
+@import "./scss/index";
+// * Основна секція
+.slider {
+  margin-top: 50px;
+
+  &__wrapper {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+// Секція з фото
+.slider__photo {
+  padding-bottom: 200px;
+  padding-top: 130px;
+  width: 50%;
+}
+
+// блок-обгортка для фото
+.slider__photo__block {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+//  блоки, що утворюють рамку навколо фото
+.slider__line {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+// верхній лівий
+.slider__line--left-top {
+  border-left: 1px solid $c-gold;
+  border-top: 1px solid $c-gold;
+  left: -15px;
+  top: -15px;
+}
+// нижній лівий
+.slider__line--left-bottom {
+  border-bottom: 1px solid $c-gold;
+  border-left: 1px solid $c-gold;
+  bottom: -15px;
+  left: -15px;
+}
+// верхній правий
+.slider__line--right-top {
+  border-right: 1px solid $c-gold;
+  border-top: 1px solid $c-gold;
+  right: -15px;
+  top: -15px;
+}
+// нижній правий
+.slider__line--right-bottom {
+  border-bottom: 1px solid $c-gold;
+  border-right: 1px solid $c-gold;
+  bottom: -15px;
+  right: -15px;
+}
+
+// Секція з описом профіля
+.slider__profile {
+  border-left: 1px solid $c-gold;
+  flex-direction: column;
+  padding-bottom: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align: center;
+  padding-top: 130px;
+  display: flex;
+  width: 50%;
+  gap: 30px;
+}
+// ім'я
+.slider__name {
+  font-family: $ff-second;
+  line-height: 42px;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+//  Лінія, яка підчеркує ім'я
+.slider__line--subtitle {
+  border: 1px solid $c-gold;
+  margin: 0 auto;
+  width: 100px;
+}
+// професія
+.slider__profesion {
+  font-family: $ff-base;
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 24px;
+}
+//- соціальні мережі
+.slider__social {
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  gap: 5px;
+}
+//- фейсбук
+.slider__link {
+  border: 2px solid $c-grey;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  width: 30px;
+}
+// іконка
+.icon {
+  font-size: 16px;
+}
+// опис
+.slider__description {
+  font-family: $ff-base;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 14px;
+}
+//- переривчаста лінія перед кнопкою
+.slider__line--subbutton {
+  margin: 0 auto;
+  display: flex;
+  width: 50px;
+  gap: 5px;
+}
+//- коротка лінія
+.slider__line--subbutton-small {
+  border: 4px solid $c-gold;
+  width: 10px;
+}
+//- довга лінія
+.slider__line--subbutton-large {
+  border: 4px solid $c-gold;
+  width: 20px;
+}
+//  секція для кнопки
+.slider__button {
+  align-items: center;
+  max-width: 150px;
+  margin: 0 auto;
+  width: 100%;
+}
