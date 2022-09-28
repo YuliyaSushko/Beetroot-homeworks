@@ -310,6 +310,7 @@ font-size: 44px;
 /* блок footer */
 .footer__block {
   margin-top: 70px;
+  margin-bottom: 70px;
   display: flex;
   justify-content: space-between;
 }
