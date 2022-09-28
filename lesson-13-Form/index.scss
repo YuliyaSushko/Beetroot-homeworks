@@ -57,6 +57,16 @@
 // form gender (radio)
 .forms_gender {
   display: flex;
+  gap: 20px;
+}
+
+.forms_gender-form {
+  display: flex;
+  gap: 10px;
+}
+
+.forms_gender__text {
+  margin-left: 10px;
 }
 // input type=radio
 input [type="radio"] {
@@ -101,10 +111,7 @@ button[type="reset"] {
   
 }
 
-button[type="reset"]:hover {
-  border: 1px solid $c-blue;
 
-}
 .form-item__title.subtitle-2 {
   text-align: center;
   line-height: 18px;
@@ -188,7 +195,6 @@ input:hover {
   flex-direction: row-reverse;
     align-items: center;
     border-radius: 3px ;
-    border: 1px solid $c-white-grey;
     display: flex;
     width: 150px;
     height: 30px;
