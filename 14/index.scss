@@ -1,0 +1,47 @@
+@import "./scss/index";
+
+//  Text subtitle
+.text__subtitle {
+  font-family: $ff-base;
+  line-height: 166%;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 85px;
+  color: $c-grey;
+
+}
+
+//  Text title
+.text__title {
+  font-family: $ff-second;
+  line-height: 166%;
+  font-weight: 500;
+  font-size: 23px;
+  margin-top: 30px;
+}
+.text__date {
+  font-family: $ff-base;
+  line-height: 166%;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 15px;
+  color: $c-grey;
+}
+
+.text__info {
+  font-family: $ff-base;
+  line-height: 166%;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 50px;
+  color: $c-dark-grey;
+}
+
+.arow__title {
+  font-family: $ff-base;
+  line-height: 166%;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 15px;
+  color: $c-grey;
+}

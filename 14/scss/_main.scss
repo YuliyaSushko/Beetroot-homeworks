@@ -3,20 +3,13 @@
   padding: 0;
   margin: 0;
 }
-body {
+body{
   font-size: $ff-base + px;
   background-color: $c-white;
-  font-family: $ff-base;
+  font-family: $ff-base ;
   color: $c-black;
 }
-.app {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding-left: 35px;
-  padding-right: 35px;
-  // border: 1px solid red; //todo remote in future
-}
+
 ul {
   list-style-type: none;
 }
@@ -25,10 +18,13 @@ h1 {
   font-size: 48px;
   line-height: 67px;
   font-weight: 600;
+
 }
 a {
   text-decoration: none;
 }
+
+
 
 .wrapper {
   width: 100%;

@@ -3,9 +3,9 @@ mixin header()
     .wrapper.header__wrapper
       .header__logo
         img(src="./assets/images/logo.svg" alt="logo")
-      .header__block
-        .header__navigation 
-          +navigation() 
-        .header__search 
-          span search
+      .header__navigation#js-header-navigation 
+        +navigation() 
+      .header__search 
+        span search
+      .header__burger 
         +burger()

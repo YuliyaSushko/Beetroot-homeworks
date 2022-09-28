@@ -1,0 +1,19 @@
+.banner {
+  position: relative;
+  background-image: url(./assets/images/bg-image.jpg);
+  height: 100vh;
+  margin-top: 100px;
+
+  @include media('<=tablet') {
+    width: 100%;
+    max-width: 700px;
+    height: 100px;
+    }
+  @include media('<=phone') {
+    width: 100%;
+    max-width: 320px;
+    height: 500px;
+  }
+
+
+}

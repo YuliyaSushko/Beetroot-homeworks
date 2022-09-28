@@ -19,14 +19,24 @@
     max-width: 140px;
     width: 100%;
   }
-  &__navigation {
-    @include media(">=320px", "<768px") {
-      display: block;
-    }
-  }
+
   &__block {
     align-items: center;
     display: flex;
+  }
+
+  &__navigation {
+  transition: $t-normal;
+  
+  
+    @include media("<=tablet") {
+      pointer-events: none;
+      opacity: 0;
+    }
+    &--show {
+      pointer-events: all;
+      opacity: 0;
+    }
   }
 
   &__search {
