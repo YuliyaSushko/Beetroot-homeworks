@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <!-- favicon -->
-    <link rel="icon" type="icon" href="./favicon.ico" />
+    <link rel="icon" type="icon" href="favicon.ico" />
     <!-- * Styles -->
     <!-- normalize -->
     <link rel="stylesheet" href="./styles/normalize.css" />
@@ -28,15 +28,15 @@
     <!-- * App -->
     <div class="app">
       <div class="main-page">
-        <div class="wrapper main-page-wrapper">
+        <div class="wrapper main-page__wrapper">
           <div>
-            <a class="main-page-link" href="../index.html">Головна сторінка</a>
+            <a class="main-page__link" href="../index.html">Головна сторінка</a>
           </div>
         </div>
       </div>
-      <!-- header -->
+      <!-- * header -->
       <header class="header">
-        <div class="wrapper header-wrapper">
+        <div class="wrapper header__wrapper">
           <!-- logo -->
           <a href="./index.html" class="logo" title="Productly">
             <div class="logo-image-block">
@@ -45,25 +45,31 @@
             <span class="logo-text"> Productly </span>
           </a>
           <!-- navigation -->
-          <div class="header-navigation">
+          <div class="header__navigation">
             <div class="navigation">
-              <ul class="navigation-list">
-                <li class="navigation-item">
-                  <a href="#" class="navigation-link">Product</a>
+              <!-- перелік -->
+              <ul class="navigation__list">
+                <!-- item -->
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Product</a>
                 </li>
-                <li class="navigation-item">
-                  <a href="#" class="navigation-link">Customers</a>
+                <!-- item -->
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Customers</a>
                 </li>
-                <li class="navigation-item">
-                  <a href="#" class="navigation-link">Pricing</a>
+                <!--item  -->
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Pricing</a>
                 </li>
-                <li class="navigation-item">
-                  <a href="#" class="navigation-link">Resources</a>
+                <!-- item -->
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Resources</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="header-buttons">
+          <!-- кнопка header -->
+          <div class="header__buttons">
             <button title="Sing In" class="button header-button" type="button">
               <span>Sing In</span>
             </button>
@@ -77,28 +83,331 @@
           </div>
         </div>
       </header>
-      <!-- * Main -->
-      <div class="main">
-        <section class="wrapper main-section">
+      <!-- * 1 секція -->
+      <section class="main">
+        <div class="wrapper main__wrapper">
           <div class="main-text">
-            <h1 class="main-text-1">The Design Thinking superpowers</h1>
-            <p class="main-text-2">
+            <!-- заголовок -->
+            <h1 class="main__text-1">The Design Thinking superpowers</h1>
+            <!-- опис -->
+            <p class="main__text-2">
               Tools, tutorials, design and innovation experts, all in one place!
               The most intuitive way to imagine your next user experience.
             </p>
+            <!-- кнопка main -->
             <button
-              class="buton button--orange main-button"
+              class="buton button--orange main__button"
               type="Get started"
             >
               Get started
             </button>
           </div>
+          <!-- малюнок 1 секції -->
           <div class="image">
-            <img src="./assets/Image (1).svg" alt="photo" />
+            <img src="./assets/images/image (28).jpg" alt="photo" />
           </div>
-        </section>      
-      </div>
-      
+        </div>
+      </section>
+      <!-- * 2 секція -->
+      <section class="tools">
+        <div class="wrapper tools__wrapper">
+          <!-- назва секції -->
+          <h2 class="tools__title">
+            We design tools to unveil <br />
+            your superpowers
+          </h2>
+          <!-- Секція з картками -->
+          <div class="tools__block">
+            <!-- картка -->
+            <div class="tools__card">
+              <img
+                class="cards__icon"
+                src="./assets/images/icon (3).svg"
+                alt="img"
+              />
+              <h3 class="cards__title">First click tests</h3>
+              <p class="cards__subtitle">
+                While most people enjoy casino gambling
+              </p>
+            </div>
+
+            <!-- картка -->
+            <div class="tools__card">
+              <img
+                class="cards__icon"
+                src="./assets/images/icon (1).jpg"
+                alt="img"
+              />
+              <h3 class="cards__title">Design surveys</h3>
+              <p class="cards__subtitle">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </div>
+            <!-- картка -->
+            <div class="tools__card">
+              <img
+                class="cards__icon"
+                src="./assets/images/icon (2).jpg"
+                alt="img"
+              />
+              <h3 class="cards__title">Preference tests</h3>
+              <p class="cards__subtitle">
+                The Myspace page defines the individual.
+              </p>
+            </div>
+
+            <!-- картка -->
+            <div class="tools__card">
+              <img
+                class="cards__icon"
+                src="./assets/images/icon (3).jpg"
+                alt="img"
+              />
+              <h3 class="cards__title">Five second tests</h3>
+              <p class="cards__subtitle">
+                Personal choices and the overall personality of the person.
+              </p>
+            </div>
+          </div>
+          <!-- кнопка tools -->
+          <div class="tools__button">
+            <button
+              class="buton button--orange main__button"
+              type="Get started"
+            >
+              Sing up Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- * 3 секція  -->
+      <section class="professionals">
+        <div class="wrapper professionals__wrapper">
+          <!-- блок секції -->
+          <div class="professionals__block">
+            <!-- підзаголовок -->
+            <span class="professionals__subtitle"
+              >Effortless Validation for</span
+            >
+            <!-- заголовок -->
+            <h2 class="professionals__title">Design Professionals</h2>
+            <!-- опис -->
+            <p class="professionals__text">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+            <!-- перелік -->
+            <ul class="professionals__list">
+              <!-- item -->
+              <li class="professionals__item">
+                <h3 class="professionals__item--title">Accessory makers</h3>
+                <p class="professionals__item--subtitle">
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </li>
+              <!-- item -->
+              <li class="professionals__item">
+                <h3 class="professionals__item--title">Alterationists</h3>
+                <p class="professionals__item--subtitle">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+              <!-- item -->
+              <li class="professionals__item">
+                <h3 class="professionals__item--title">
+                  Custom Design designers
+                </h3>
+                <p class="professionals__item--subtitle">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!--  малюнок секції  professionals-->
+          <div class="professionals__image">
+            <img src="./assets/images/Image (23).jpg" alt="photo" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 секція Product Managers -->
+      <section class="managers">
+        <div class="wrapper managers__wrapper">
+          <!-- блок секції -->
+          <div class="managers__block">
+            <!-- підзаголовок -->
+            <span class="managers__subtitle">Effortless Validation for</span>
+            <!-- заголовок -->
+            <h2 class="managers__title">Design Professionals</h2>
+            <!-- опис -->
+            <p class="managers__text">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+            <!-- перелік -->
+            <ul class="managers__list">
+              <!-- item -->
+              <li class="managers__item">
+                <div class="managers__icon">
+                  <img src="./assets/images/icon (4).jpg" alt="icon" />
+                </div>
+                <p class="managers__item--subtitle">
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </li>
+              <!-- item -->
+              <li class="managers__item">
+                <div class="managers__icon">
+                  <img src="./assets/images/icon (4).jpg" alt="icon" />
+                </div>
+                <p class="managers__item--subtitle">
+                  If you are looking for a new way to promote your business that
+                  wont cost you more money,
+                </p>
+              </li>
+              <!-- item -->
+              <li class="managers__item">
+                <div class="managers__icon">
+                  <img src="./assets/images/icon (4).jpg" alt="icon" />
+                </div>
+                <p class="managers__item--subtitle">
+                  If you are looking for a new way to promote your business that
+                  wont cost you more money,
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- малюнок секції managers -->
+          <div class="managers__image">
+            <img src="./assets/images/Image (24).jpg" alt="photo" />
+          </div>
+        </div>
+      </section>
+
+      <!--  3 секція Marketers-->
+      <section class="marketers">
+        <div class="wrapper marketers__wrapper">
+          <!-- блок секції marketers -->
+          <div class="marketers__block">
+            <!-- підзаголовок -->
+            <span class="marketers__subtitle">Optimisation for</span>
+            <!-- заголовок -->
+            <h2 class="marketers__title">Marketers</h2>
+            <!-- опис -->
+            <p class="marketers__text">
+              Few would argue that, despite the advancements of feminism over
+              the past three decades, women still face a double standard when it
+              comes to their behavior.
+            </p>
+            <!-- перелік -->
+            <ul class="marketers__list">
+              <!-- item -->
+              <li class="marketers__item">
+                <h3 class="marketers__item--title">Accessory makers</h3>
+                <p class="marketers__item--subtitle">
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </li>
+              <!-- item -->
+              <li class="marketers__item">
+                <h3 class="marketers__item--title">Alterationists</h3>
+                <p class="marketers__item--subtitle">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+              <!-- item -->
+              <li class="marketers__item">
+                <h3 class="marketers__item--title">Custom Design designers</h3>
+                <p class="marketers__item--subtitle">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- малюнок секції marketers -->
+          <div class="marketers__image">
+            <img src="./assets/images/Image (27).jpg" alt="photo" />
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="wrapper footer__wrapper">
+          <!-- блок footer -->
+          <div class="footer__block">
+            <!-- логотип -->
+            <a href="./index.html" class="logo" title="Productly">
+              <div class="logo-image-block">
+                <img src="./assets/images/logo.png" alt="Logo" title="" />
+              </div>
+              <span class="logo-text"> Productly </span>
+            </a>
+            <!-- навігація -->
+            <div class="footer__navigation">
+              <h4 class="footer__navigation__title">Quick Links</h4>
+              <ul class="footer__navigation__list">
+                <li class="footer__navigation__item">
+                  <a href="#" class="navigation__link">Product</a>
+                </li>
+                <li class="footer__navigation__item">
+                  <a href="#" class="navigation__link">Customers</a>
+                </li>
+                <li class="footer__navigation__item">
+                  <a href="#" class="navigation__link">Pricing</a>
+                </li>
+                <li class="footer__navigation__item">
+                  <a href="#" class="navigation__link">Resources</a>
+                </li>
+              </ul>
+            </div>
+            <!-- додаткова навігація -->
+            <div class="footer__navigation">
+              <h4 class="footer__navigation__title">Legal Stuff</h4>
+              <ul class="footer__navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Disclaimer</a>
+                </li>
+                <li class="footer__navigation__item">
+                  <a href="#" class="navigation__link">Financing</a>
+                </li>
+                <li class="footer__navigation__item">
+                  <a href="#" class="navigation__link">Privacy Policy</a>
+                </li>
+                <li class="footer__navigation__item">
+                  <a href="#" class="navigation__link">Terms of Service</a>
+                </li>
+              </ul>
+            </div>
+            <!-- форма для телефону -->
+            <div class="footer__form">
+              <h4 class="footer__navigation__title">Knowing you're always on 
+                <br> the best energy deal. 
+              </h4>
+              <input type="tel" class="tel" placeholder="Enter your phone Number">
+              <!-- кнопка секції footer -->
+              <div class="footer__button">
+                <button
+                  class="buton button--orange main__button"
+                  type="Get started"
+                >
+                  Sing up Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
+

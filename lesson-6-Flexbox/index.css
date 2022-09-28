@@ -1,10 +1,13 @@
+/* *APP */
 .app{
-
+background-color: var(--c-white) ;
 }
-.header-wrapper {
+
+/* * Header */
+.header__wrapper {
   justify-content: space-between;
-  align-items: center;
   padding-bottom: 15px;
+  align-items: center;
   padding-top: 15px;
   display: flex;
 }
@@ -14,11 +17,12 @@
   display: flex;
   border: 20px;
 }
+/* logo при hover */
 .logo:hover span {
   color: var(--c-orange);
 }
-
-.logo-text {
+/* logo text */
+.logo__text {
   transition: var(--t-normal);
   font-family: sant-serif;
   color: var(--c-blue);
@@ -27,58 +31,328 @@
   font-size: 30px;
 }
 /* * navigation */
-.navigation-list {
+.navigation__list {
   list-style-type: none;
   display: flex;
 }
-.navigation-item {
+
+/* navigation item */
+.navigation__item {
   margin-right: 10px;
 }
-.navigation-item:last-child {
+
+/* останній item */
+.navigation__item:last-child {
   margin-right: 0;
 }
-.navigation-link {
+
+/* посилання */
+.navigation__link {
   transition: var(--t-normal);
   white-space: nowrap;
   padding: 5px;
 }
-.navigation-link:hover {
+.navigation__link:hover {
 color: var(--c-orange);
 }
 /* * Buttons */
-.header-buttons {
+.header__buttons {
   display: flex;
 }
-.header-button {
+.header__button {
   white-space: nowrap;
   margin-right: 10px;
 }
-.main-section {
-  display: flex;
+
+
+
+/* Main */
+.main__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   padding-top: 70px;
+  display: flex;
 }
-.main-text {
+/* main text */
+.main__text {
+  margin-bottom: 20px;
 padding-top: 97px;
 max-width: 500px;
 }
-.main-text-1{
+
+/* другий текст */
+.main__text-1{
+  line-height: 54px;
 font-weight: 700;
 font-size: 44px;
-line-height: 54px;
 }
-.main-text-2{
+/* третій текст */
+.main__text-2{
+  margin-bottom: 20px;
+  line-height: 28px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
 }
-.image {
-  width: 644px;
-}
-img {
-  width: 100%;
-}
-.main-button {
+
+/*  кнопка в main */
+.main__button {
   width: 180px;
   height: 50px;
   border: none;
+}
+/* Секція design tools */
+.tools__wrapper {
+  background-image: url(./assets/images/bg.jpg);
+  padding-top: 100px;
+}
+
+/* назва секції */
+.tools__title {
+  text-align: center;
+  line-height: 44px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+/* блок секції */
+.tools__block {
+  justify-content: space-between;
+  padding-top: 50px;
+  display: flex;
+  
+}
+
+/* картки */
+.tools__card {
+  max-width: 270px;
+  width: 100%;
+  margin-right: 40px;
+}
+
+/* іконка */
+.cards__icon {
+  margin-bottom: 30px;
+}
+
+/* назва картки */
+.cards__title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+/* підзаголовок картки */
+.cards__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* кнопка в розділі tools */
+.tools__button{
+  justify-content: center;
+  display: flex;
+  margin-top: 80px;
+}
+
+/* 1 секція Design Professionals */
+
+.professionals__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  gap: 115px;
+}
+
+/* підзаголовок секції */
+.professionals__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* назва секції */
+.professionals__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+/* опис */
+.professionals__text {
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* перелік */
+.professionals__list {
+  margin-top: 40px;
+}
+
+/* item */
+.professionals__item {
+  margin-bottom: 30px;
+}
+
+/*  останній item без відступу */
+.professionals__item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* 2 секція Manager */
+
+
+.managers__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap:115px ;
+  padding-top: 120px;
+}
+/* підзаголовок */
+.managers__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* назва секції */
+.managers__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+/* опис */
+.managers__text {
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* перелік */
+.managers__list {
+  margin-top: 40px;
+}
+
+/* item */
+.managers__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+/* останній без відступу */
+.managers__item:last-child {
+  margin-bottom: 0;
+}
+
+/* іконка */
+.managers__icon {
+  margin-right: 30px;
+}
+
+/*  3 секція marketers */
+.marketers__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:115px ;
+  padding-top: 120px;
+}
+
+/* підзаголовок */
+.marketers__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* назва секції */
+.marketers__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+/* опис */
+.marketers__text {
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* перелік */
+.marketers__list {
+  margin-top: 40px;
+}
+
+/* item */
+.marketers__item {
+  margin-bottom: 30px;
+}
+
+/* останній без відступу */
+.marketers__item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* *Footer */
+.footer__wrapper {
+  margin-top: 123px;
+  border-top: 1px solid var(--c-blue-light);
+}
+
+/* блок footer */
+.footer__block {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  навігація */
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+}
+/*  назва навігаційного блоку */
+.footer__navigation__title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+/* перелік */
+.footer__navigation__list {
+  margin-top: 30px;
+}
+
+/*  item */
+.footer__navigation__item {
+  margin-top: 15px;
+}
+
+/* форма для телефона */
+.footer__form {
+  margin-bottom: 10px;
+  line-height: 26px;
+}
+/* форма телефона */
+.tel {
+  background-color: transparent;
+  border: 1px solid var(--c-blue-light);
+  color: var(--c-text);
+  min-width: 340px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+/* кнопка footer */
+.footer__button {
+  margin-top: 20px;
 }
