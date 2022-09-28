@@ -95,10 +95,15 @@ label {
   margin: 0 auto;
 }
 button[type="reset"] {
-  border: 1px solid $c-white-grey;
   background-color: $c-white;
   border-radius: 6px;
   height: 30px;
+  
+}
+
+button[type="reset"]:hover {
+  border: 1px solid $c-blue;
+
 }
 .form-item__title.subtitle-2 {
   text-align: center;
@@ -178,4 +183,22 @@ input {
 }
 input:hover {
   border: 1px solid $c-blue;
+}
+.block__image--upload-photo{
+  flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 3px ;
+    border: 1px solid $c-white-grey;
+    display: flex;
+    width: 150px;
+    height: 30px;
+}
+.block__image--upload-photo:hover {
+  border: 1px solid $c-blue;
+}
+
+
+
+.block__image--upload-photo2 {
+  position: relative;
 }
