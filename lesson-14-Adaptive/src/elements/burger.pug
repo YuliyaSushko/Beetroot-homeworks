@@ -1,6 +1,8 @@
+mixin burger(args={})
+  - const type = args.type || 'button'
 
-mixin burger()
-  #nav
+  button(type=args.type)#nav
     i
     i
     i
+

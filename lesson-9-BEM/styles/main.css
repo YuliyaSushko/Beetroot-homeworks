@@ -35,11 +35,17 @@ header{
   margin: 0 auto;
   width: 100%;
 }
+/* ul */
+ul {
+  list-style: none;
+}
+
 
 /* li */
 li{
   background-color: var(--c-white);
   margin-right: 20px;
+
   }
 
   /* li last child */
@@ -50,4 +56,14 @@ li:last-child {
 h1 {
   font-size: 34px;
   line-height: 40px;
+}
+
+
+/* wrapper */
+.wrapper {
+  max-width: 1240px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
