@@ -196,7 +196,7 @@ switch (nowDay) {
     case 'Saturday':
       alert('Sunday');
       break;
-    
+    // виводим дефолтне значення
     default:
       console.log('Вибачте ви ввели невірне значення');
       break;
