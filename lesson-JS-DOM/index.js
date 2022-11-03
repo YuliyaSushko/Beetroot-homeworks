@@ -64,5 +64,5 @@ btnShow.addEventListener('click', function() {               //створюю ф
 btnClose.addEventListener('click', function() {             //створюю функцію, що спрацьовує при кліку на кнопку 'закрити'
   songsList.innerHTML = '';
   btnShow.style.display = 'block';
-  btnClose.style.display = 'none';                          //сама кнопка 'закрити' пропадає
+  btnClose.style.display = 'none';                          //сама кнопка 'закрити' пропадає, 
 });
