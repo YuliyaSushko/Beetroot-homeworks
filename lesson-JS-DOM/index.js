@@ -1,3 +1,6 @@
+// 
+
+
 const playList = [
   {
     author: 'LED ZEPPELIN',
@@ -40,36 +43,26 @@ const playList = [
   },
 ]
 
-const showSongsList = arr => {
+const showSongsList = arr => {        //створюю константу, яка буде приймати в собі масив
   let list = '';
   for(item of arr) {
-      list += `<div class="inline-box"><h3 class="h-inline">${item.author}</h3> - ${item.song}</div>`;
+      list += `Автор: ${item.author} - Пісня: ${item.song}; `;     //повертає список авторів і пісень, але не можу зробити щоб був вниз список 
   }
-  return list;
+  return list;     //повертає саме список в тому вигляді що прописано вище
 }
 
-const btnShowSongs = document.querySelector('.btn-show-songs');
-const btnHideSongs = document.querySelector('.btn-hide-songs');
-const songsList = document.querySelector('.songs-list');
+const btnShow = document.querySelector('.button-show');      //створюю константу, що витягує данні з документу
+const btnClose = document.querySelector('.button-close');    //створюю константу, що витягує данні з документу
+const songsList = document.querySelector('.songs-list');     //створюю константу, що витягує данні з документу
 
-btnShowSongs.addEventListener('click', function() {
+btnShow.addEventListener('click', function() {               //створюю функцію, що спрацьовує при кліку на кнопку відкрити
   songsList.innerHTML = showSongsList(playList);
-  btnShowSongs.style.display = 'none';
-  btnHideSongs.style.display = 'block';
+  btnShow.style.display = 'none';                            //при цьому кнопка  'відкрити' пропадає
+  btnClose.style.display = 'block';                           
 });
 
-btnHideSongs.addEventListener('click', function() {
+btnClose.addEventListener('click', function() {             //створюю функцію, що спрацьовує при кліку на кнопку 'закрити'
   songsList.innerHTML = '';
-  btnShowSongs.style.display = 'block';
-  btnHideSongs.style.display = 'none';
+  btnShow.style.display = 'block';
+  btnClose.style.display = 'none';                          //сама кнопка 'закрити' пропадає
 });
-
-/* Завдання 2 - Создать HTML-страницу с кнопкой "Открыть" и модальным окном. На модальном окне должен быть текст и кнопка "Закрыть". Изначально модальное окно не отображается. При клике на кнопку "Открыть" появляется модальное окно, на кнопку "Закрыть" – исчезает.  */
-
-// function openPopup() {
-//   const popupBg = document.querySelector('.popup-bg');
-//   const popup = document.querySelector('.popup');
-//   popupBg.classList.toggle('visible');
-//   popup.classList.toggle('visible');
-// }
-

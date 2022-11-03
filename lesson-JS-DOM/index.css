@@ -1,0 +1,44 @@
+.app {
+  background-image: url(./assets/images/vecteezy_foggy-landscape-forest-in-the-morning-beautiful-sunrise-mist_5572340_85\ \(1\).jpg);
+  font-family: 'Roboto', sans-serif;
+  padding: 50px;
+  height: 100vh;
+}
+
+.song-box {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.song-box__buttons {
+  display: flex;
+  gap: 50px;
+}
+
+.button {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #9c249c;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: aliceblue;
+  cursor: pointer;
+  display: flex;
+  height: 70px;
+  border: none;
+  width: 100%;
+  border-radius: 15px;
+
+}
+
+.button:hover {
+  background-color: #ee7fdf;
+  opacity: 0.5;
+  color: #f5ebf5;
+}

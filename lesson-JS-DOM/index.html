@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>lesson-JS-DOM</title>
-</head>
-<body>
-  <div class="app">
-    <div class="form-box">
-        <h1>Список пісень</h1>
-        <button class="btn btn-show-songs" type="button"><span>Відкрити</span></button>
-        <button class="btn btn-hide-songs hide" type="button"><span>Закрити</span></button>
-        <div class="songs-list"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson-JS-DOM</title>
+    <!-- * Styles -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- local styles -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="song-box">
+        <h1 class="song-box__title">Список пісень</h1>
+        <div class="song-box__buttons">
+          <button class="button button-show" type="button">
+            <span>Відкрити</span>
+          </button>
+          <button class="button button-close" type="button">
+            <span>Закрити</span>
+          </button>
+          <div class="songs-list"></div>
+        </div>
+      </div>
     </div>
-</div>
-  <script defer src="index.js"></script>
-</body>
+    <script defer src="index.js"></script>
+  </body>
 </html>
