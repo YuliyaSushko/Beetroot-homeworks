@@ -166,13 +166,13 @@ const registration = (event) => {
   }
   
 
-  // if (!lastName) {
-  //   innerText(item.lastName.id, item.lastName.errors.noName);
-  // } else if (lastName.length < item.lastName.minLenght) {
-  //   innerText(item.lastName.id, item.lastName.errors.minLenght);
-  // } else {
-  //   innerText(item.lastName.id, "");
-  // }
+  if (!lastName) {
+    innerText(item.lastName.id, item.lastName.errors.noName);
+  } else if (lastName.length < item.lastName.minLenght) {
+    innerText(item.lastName.id, item.lastName.errors.minLenght);
+  } else {
+    innerText(item.lastName.id, "");
+  }
 
   // * Перевірка поля E-mail
   const email = form.get("email");
