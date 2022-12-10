@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor = "let product of productList">
+    <!-- <span>
+      Name: {{product.name }}
+    </span> -->
+    {{ product.price | currency}}
+    <!-- <app-product [data]="product"></app-product> -->
+  </li>
+</ul>

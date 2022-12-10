@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson-JS-Класи</title>
+    <!-- * Styles -->
+    <link rel="stylesheet" href="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- * App -->
+    <div id="app">
+      <!-- * Form -->
+      <form class="registration" method="post" id="js-registration-form">
+        <div class="registration__wrapper">
+          
+          <!-- * Title -->
+          <h1 class="registration__title">Registration</h1>
+          
+          <!-- * First name -->
+          <label class="registration__item">
+            <span>First name</span>
+            <input type="text" name="firstName" />
+            <div
+              class="registration__error"
+              id="js-registration-first-name-error"
+            ></div>
+          
+            <!-- * Last name -->
+            <label class="registration__item">
+            <span>Last name</span>
+            <input type="text" name="lastName" />
+            <div
+              class="registration__error"
+              id="js-registration-last-name-error"
+            ></div>
+          </label>
+          
+          <!-- * Email -->
+          <label class="registration__item">
+            <span>Email</span>
+            <input type="email" name="email" />
+            <div
+              class="registration__error"
+              id="js-registration-email-error"
+            ></div>
+          </label>
+          
+          <!-- * Username -->
+          <label class="registration__item">
+            <span>Username</span>
+            <input type="text" name="username" />
+            <div
+              class="registration__error"
+              id="js-registration-username-error"
+            ></div>
+          </label>
+          
+          <!-- * Password -->
+          <label class="registration__item">
+            <span>Password</span>
+            <input type="password" name="password" />
+            <div
+              class="registration__error"
+              id="js-registration-password-error"
+            ></div>
+          </label>
+          
+          <!-- * Disable season animation -->
+          <label class="registration__item">
+            <span>Disabled season animation</span>
+            <input
+              type="checkbox"
+              name="disabledSeasonAnimation"
+              class="registration__disabled-season-animation"
+            />
+            <div
+              class="form__error"
+              id="js-form-disabled-season-animation-error"
+            ></div>
+          </label>
+          
+          <!-- * Language -->
+          <label class="registration__item registration__item--select">
+            <select name="language">
+              <option value="en">EN</option>
+              <option value="ua">UA</option>
+            </select>
+            <div
+              class="registration__error"
+              id="js-registration-language-error"
+            ></div>
+          </label>
+          
+          <!-- * Footer -->
+          <div class="registration__footer">
+            <button
+              type="reset"
+              class="button registration__footer__item registration__reset"
+            >
+              <span>Reset</span>
+            </button>
+            <button
+              type="submit"
+              class="button registration__footer__item registration__submit"
+            >
+              <span>Submit</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- * Scripts -->
+    <script type="module" defer src="index.js"></script>
+
+  </body>
+</html>

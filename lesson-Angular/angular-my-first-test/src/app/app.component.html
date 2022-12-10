@@ -1,0 +1,43 @@
+<!-- <button type="button" (click)="loadProductList()">
+  <span>Load product list</span>
+</button>
+
+<hr /> -->
+
+<!-- виводжу скільки в мене продуктів -->
+<!-- <p>Count of product: {{ productList.length }}</p>
+
+<app-list *ngIf="productList.length" [productList]="productList"></app-list>
+
+<img
+  #imgCustom
+  (error)="imgCustom.src = 'new-link'"
+  src="assets/images/krossovki.webp"
+  alt="product"
+/> -->
+
+<!-- <input
+  type="number"
+  [(ngModel)]="inputValue"      
+  (keyup.enter)="createNewListItem()"
+/>
+
+<br />
+
+<ng-container *ngIf="!list.length; else listTemplate">No list</ng-container>
+
+<ng-template #listTemplate>
+  <ul>
+    <li *ngFor="let num of list">
+      {{ num }}
+    </li>
+  </ul>
+</ng-template> -->
+<app-header></app-header>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+
+<app-footer></app-footer>
